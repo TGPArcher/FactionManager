@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <FM.World>World</FM.World>
+  <FM.Faction>Faction</FM.Faction>
+  <FM.Colonies>Colonies</FM.Colonies>
+  <FM.Loaded>Loaded</FM.Loaded>
+  <FM.Load>Load</FM.Load>
+  <FM.Unload>Unload</FM.Unload>
+  <FM.actionConfirm>Are you sure you want to </FM.actionConfirm>
+  
+  <FM.prepareGame>Preparing current game</FM.prepareGame>
+  <FM.prepareLoad>Preparing to load</FM.prepareLoad>
+  <FM.mapLoaded>Map loaded succesfully</FM.mapLoaded>
+  <FM.mapUnloaded>Map unloaded succesfully</FM.mapUnloaded>
+  <FM.mapUnloadFailed>Failed to unload map</FM.mapUnloadFailed>
+  <FM.errorMapUnloadLast>Can not unload the last map</FM.errorMapUnloadLast>
+  
+</LanguageData>

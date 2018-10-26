@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Faction Manager</name>
+	<author>TGPArcher</author>
+	<url></url>
+	<targetVersion>1.0.0</targetVersion>
+	<description>A simple mod to allow you to manage multiple colonies easily and expand your faction
+
+Mod order:
+ Order does not matter
+	
+Issues:
+ * Unloading a map when there are hostile pawns on the map will make them flee when loading the map again
+ * Unloading a map when there are caravans on the map will make them leave when loading the map again
+	
+License:
+ Do what you want, but give the author credit.</description>
+</ModMetaData>

@@ -12,8 +12,11 @@ namespace FactionManager
 {
     public static class PersistenceUtility
     {
+        public static PersistenceUtilityStatus utilityStatus = PersistenceUtilityStatus.Idle;
+
         public static void LoadMap(string fileName, bool forced = false)
         {
+            utilityStatus = PersistenceUtilityStatus.Loading;
             if(!MaxColoniesReached() || forced)
             {
                 LongEventHandler.SetCurrentEventText("FM.prepareGame".Translate());
@@ -28,6 +31,8 @@ namespace FactionManager
             {
                 Messages.Message("CommandSettleFailReachedMaximumNumberOfBases".Translate(), MessageTypeDefOf.NeutralEvent);
             }
+
+            utilityStatus = PersistenceUtilityStatus.Idle;
         }
 
         private static bool MaxColoniesReached()
@@ -100,6 +105,7 @@ namespace FactionManager
 
         public static void UnloadMap(Map map, string fileName, bool forced = false)
         {
+            utilityStatus = PersistenceUtilityStatus.Saving;
             if (!IsLastColony() || forced)
             {
                 if(SaveMap(map, fileName))
@@ -120,6 +126,8 @@ namespace FactionManager
             {
                 Messages.Message("FM.errorMapUnloadLast".Translate(), MessageTypeDefOf.RejectInput);
             }
+
+            utilityStatus = PersistenceUtilityStatus.Idle;
         }
 
         private static bool IsLastColony()

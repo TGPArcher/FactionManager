@@ -1,4 +1,4 @@
 ﻿namespace FactionManager
 {
-    public enum PersistenceUtilityStatus { Idle = 0, Saving, Loading}
+    public enum PersistenceUtilityStatus { Idle, Saving, Loading}
 }

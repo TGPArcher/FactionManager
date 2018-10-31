@@ -2,16 +2,15 @@
 <ModMetaData>
 	<name>Faction Manager</name>
 	<author>TGPArcher</author>
-	<url></url>
+	<url>https://ludeon.com/forums/index.php?topic=46080.msg438191#msg438191</url>
 	<targetVersion>1.0.0</targetVersion>
-	<description>A simple mod to allow you to manage multiple colonies easily and expand your faction
+	<description>As humans we have a limit to how many things we can keep track of, and this game forces you to keep track of a lot more than that, especially if you want to expand your faction having multiple colonies.
+With the Faction Manager Mod you can have more than five colonies and conquer the whole world map, or at last expand to a big and respected faction.
+The beautiful part is that you won’t have to play all your colonies at the same time as the game is designed.
+When there are more colonies than you can handle you can unload one you don’t want to focus right now and it will be saved to a file, when you’ll want to play with that colony again just load it again and all will be there as you left it.
 
 Mod order:
  Order does not matter
-	
-Issues:
- * Unloading a map when there are hostile pawns on the map will make them flee when loading the map again
- * Unloading a map when there are caravans on the map will make them leave when loading the map again
 	
 License:
  Do what you want, but give the author credit.</description>

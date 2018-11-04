@@ -136,12 +136,16 @@ namespace FactionManager
         {
             if (Current.Game.CurrentMap == unloadedMap)
             {
-                var playerMaps = Find.World.worldObjects.Settlements.FindAll(settlement =>
-                    settlement.Faction.IsPlayer && settlement.Map != unloadedMap);
+                var playerSettlements = Find.World.worldObjects.Settlements.FindAll(settlement =>
+                    settlement.Faction.IsPlayer
+                    && settlement.Map != null
+                    && settlement.Map != unloadedMap);
+                
+                if (playerSettlements.Count == 0)
+                    Log.Error($"[FactionManager] playerSettlements.Count = 0");
 
-                Current.Game.CurrentMap = playerMaps.First().Map;
-
-                Log.Warning($"[FactionManager] CurrentMap changed to: " + playerMaps.First().Map.Parent.LabelCap);
+                Current.Game.CurrentMap = playerSettlements.First().Map;
+                Log.Warning($"[FactionManager] CurrentMap changed to: {playerSettlements.First().Map.Parent.LabelCap}");
             }
         }
 

@@ -108,7 +108,9 @@ namespace FactionManager
             utilityStatus = PersistenceUtilityStatus.Saving;
             if (!IsLastColony() || forced)
             {
-                if(SaveMap(map, fileName))
+                FixCurrentMapIfActive(map);
+ 
+                if (SaveMap(map, fileName))
                 {
                     // Changing state to not get the banished debuff as you literally don't banish your people
                     Current.ProgramState = ProgramState.Entry;
@@ -128,6 +130,23 @@ namespace FactionManager
             }
 
             utilityStatus = PersistenceUtilityStatus.Idle;
+        }
+
+        private static void FixCurrentMapIfActive(Map unloadedMap)
+        {
+            if (Current.Game.CurrentMap == unloadedMap)
+            {
+                var playerSettlements = Find.World.worldObjects.Settlements.FindAll(settlement =>
+                    settlement.Faction.IsPlayer
+                    && settlement.Map != null
+                    && settlement.Map != unloadedMap);
+                
+                if (playerSettlements.Count == 0)
+                    Log.Error($"[FactionManager] playerSettlements.Count = 0");
+
+                Current.Game.CurrentMap = playerSettlements.First().Map;
+                Log.Warning($"[FactionManager] CurrentMap changed to: {playerSettlements.First().Map.Parent.LabelCap}");
+            }
         }
 
         private static bool IsLastColony()

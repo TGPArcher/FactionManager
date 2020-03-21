@@ -1,22 +1,26 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-	<name>Faction Manager</name>
-	<author>TGPArcher</author>
-	<url>https://ludeon.com/forums/index.php?topic=46080.msg438191#msg438191</url>
-	<currentVersion>1.1.0</currentVersion>
-	<description>
-    As humans we have a limit to how many things we can keep track of, and this game forces you to keep track of a lot more than that, especially if you want to expand your faction having multiple colonies.
+  <name>Faction Manager</name>
+  <author>TGPArcher</author>
+  <url>https://ludeon.com/forums/index.php?topic=46080.msg438191#msg438191</url>
+  <supportedVersions>
+    <li>1.0</li>
+    <li>1.1</li>
+  </supportedVersions>
+  <description>
+As humans we have a limit to how many things we can keep track of, and this game forces you to keep track of a lot more than that, especially if you want to expand your faction having multiple colonies.
 With the Faction Manager Mod you can have more than five colonies and conquer the whole world map, or at last expand to a big and respected faction.
 The beautiful part is that you won’t have to play all your colonies at the same time as the game is designed.
 When there are more colonies than you can handle you can unload one you don’t want to focus right now and it will be saved to a file, when you’ll want to play with that colony again just load it again and all will be there as you left it.
 
 Mod order:
  Order does not matter
-	
+
 License:
  Do what you want, but give the author credit.
 
-DevMode changes:  github.com/PapaJoesSoup/FactionManager
-		This version of Faction Manager is a test version to support Rimworld 1.1 until and if the original author returns.  Use at your own risk.  as with all software, backup your saves and game data.
+Ver 1.1 Dev changes:  github.com/PapaJoesSoup/FactionManager
+
+This version of Faction Manager is a test version to support Rimworld 1.1 until and if the original author returns.  Use at your own risk.  As with all test software, backup your saves and game data before use.
   </description>
 </ModMetaData>

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <MainButtonDef>
+    <defName>Colonies</defName>
+    <label>colonies</label>
+    <description>View your faction colonies.</description>
+    <tabWindowClass>FactionManager.MainTabWindow_Colonies</tabWindowClass>
+    <order>90</order>
+    <validWithoutMap>true</validWithoutMap>
+  </MainButtonDef>
+  
+  <MainButtonDef>
+    <defName>Factions</defName>
+    <label>factions</label>
+    <description>Review the factions known to the colony and their relationships.</description>
+    <tabWindowClass>MainTabWindow_Factions</tabWindowClass>
+    <order>100</order>
+    <defaultHotKey>F8</defaultHotKey>
+    <validWithoutMap>true</validWithoutMap>
+  </MainButtonDef>
+  
+</Defs>

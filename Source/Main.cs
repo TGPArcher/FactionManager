@@ -1,4 +1,4 @@
-﻿using Harmony;
+﻿using HarmonyLib;
 using System.Reflection;
 using Verse;
 
@@ -9,7 +9,7 @@ namespace FactionManager
     {
         static Main()
         {
-            var harmony = HarmonyInstance.Create("TGPAcher.Rimworld.FactionManager");
+            var harmony = new Harmony("TGPAcher.Rimworld.FactionManager");
             harmony.PatchAll(Assembly.GetExecutingAssembly());
 
             if (InfinityStorageSupport.InfinityStorageActive())

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<FactionManager.ColoniesManagerTabDef>
+		<defName>Colonies</defName>
+		<label>Colonies</label>
+	</FactionManager.ColoniesManagerTabDef>
+
+</Defs>
